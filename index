@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Website</title>
+    <title>gwas-test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                        url('custom-image.jpg') no-repeat center center/cover;
+                        url('https://aggregator.walrus-testnet.walrus.space/v1/blobs/SdbxhrlG7zWLjhhh-qwvtK8U1kzXAqpq6cs_Il1VID4') no-repeat center center/cover;
             color: #f9e828;
             font-family: 'RuneScape UF', sans-serif;
             text-align: center;
@@ -33,17 +33,21 @@
         }
 
         .button {
-            margin-top: 20px;
-            padding: 20px 40px; /* Adjust size */
-            font-size: 2rem; /* Adjust text size */
-            color: white;
-            background: #ff4500;
+            width: 200px;
+            height: 60px;
+            background: url('https://aggregator.walrus-testnet.walrus.space/v1/blobs/oV5OxJGKJjrAa5QMKKiYZzbAb2NKI0VihEpGNWw4xiE') no-repeat center center;
+            background-size: cover;
             border: none;
             cursor: pointer;
             animation: bounce 1s infinite;
             position: absolute;
-            bottom: 50px; /* Adjust vertical position */
-            right: 50px; /* Adjust horizontal position */
+            bottom: 50px;
+            right: 50px;
+            text-indent: -9999px;
+        }
+
+        .button:hover {
+            filter: brightness(1.2);
         }
 
         @keyframes bounce {

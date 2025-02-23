@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        @import url('https://fonts.cdnfonts.com/css/runescape-uf');
+        @font-face {
+            font-family: 'runescape_uf';
+            src: url('https://aggregator.walrus-testnet.walrus.space/v1/blobs/PBbIT9trSKyYrH4mzQ_gwYi4E4Ac_5L6JrLQrmkr7dI') format('truetype');
+        }
 
         body {
             margin: 0;
@@ -15,7 +18,7 @@
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                         url('https://aggregator.walrus-testnet.walrus.space/v1/blobs/SdbxhrlG7zWLjhhh-qwvtK8U1kzXAqpq6cs_Il1VID4') no-repeat center center/cover;
             color: #f9e828;
-            font-family: 'RuneScape UF', sans-serif;
+            font-family: 'runescape_uf', sans-serif;
             text-align: center;
         }
 
@@ -84,4 +87,5 @@
     </script>
 </body>
 </html>
+
 

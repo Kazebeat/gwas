@@ -1,1 +1,74 @@
-//placeholder for moralis 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIN Token</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        body {
+            background: url('your-background-image.jpg') repeat;
+            font-family: "Microsoft Sans Serif", sans-serif;
+        }
+        .desktop-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .desktop-icon img {
+            width: 48px;
+            height: 48px;
+        }
+        .window {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 350px;
+        }
+        .pie-chart {
+            width: 100%;
+            height: 150px;
+            background: url('your-pie-chart.png') no-repeat center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="desktop-icon" onclick="openWindow()">
+            <img src="your-icon.png" alt="Tokenomics">
+            <span>Tokenomics</span>
+        </div>
+    </div>
+
+    <div class="window" id="tokenomics-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Tokenomics</div>
+            <div class="title-bar-controls">
+                <button onclick="closeWindow()">✕</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p><b>Supply:</b> 10,000,000 PAIN</p>
+            <ul>
+                <li><span style="color: purple;">Harold (Locked till 2045):</span> 5,000,000 PAIN (50%)</li>
+                <li><span style="color: blue;">PAINSALE:</span> 2,000,000 PAIN (20%)</li>
+                <li><span style="color: green;">Liquidity:</span> 1,500,000 PAIN (15%)</li>
+                <li><span style="color: red;">Community:</span> 1,000,000 PAIN (10%)</li>
+                <li><span style="color: yellow;">Partners:</span> 500,000 PAIN (5%)</li>
+            </ul>
+            <div class="pie-chart"></div>
+            <p><b>Token Address:</b> <a href="#">1Qf8gESP4i6CFNWerUSDdLKJ9U1LpqTYvjJ2MM4pain</a></p>
+        </div>
+    </div>
+
+    <script>
+        function openWindow() {
+            document.getElementById("tokenomics-window").style.display = "block";
+        }
+        function closeWindow() {
+            document.getElementById("tokenomics-window").style.display = "none";
+        }
+    </script>
+</body>
+</html>
